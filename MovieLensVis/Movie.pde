@@ -18,12 +18,8 @@ public class Movie {
   }
 }
 
-class SortByRating implements Comparator<Movie> 
-{ 
-    public int compare(Movie a, Movie b) 
-    { 
-//      if (a == null || b == null) println("NULL");
-//      println(a.getRating() + "::" + b.getRating() + "-->" + ((int) (a.getRating() - b.getRating())));
-      return Float.compare(a.getRating(), b.getRating());
-    } 
+class SortByRating implements Comparator<Movie> { 
+  public int compare(Movie a, Movie b) { 
+    return Float.compare(a.getRating(), b.getRating());
+  } 
 }
